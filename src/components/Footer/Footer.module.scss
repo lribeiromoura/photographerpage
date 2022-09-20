@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;  
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.social__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.social__link_a {
+  margin: 8px;
+}
