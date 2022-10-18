@@ -1,15 +1,16 @@
-import style from './Menu.module.scss';
-import classNames from 'classnames';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import classNames from 'classnames';
+
 import MenuIcon from '@mui/icons-material/Menu';
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import { useEffect, useState } from 'react';
+
+import style from './Menu.module.scss';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
@@ -21,7 +22,7 @@ export default function Menu() {
     },
   ];
 
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     top: false,
     left: false,
     bottom: false,
@@ -65,9 +66,9 @@ export default function Menu() {
       <List>
         {routes.map((route, index) => (
           <ListItem key={index} disablePadding>
-            <ListItemButton>
+            <ListItemButton sx={{ width: '100%' }}>
               <Link to={route.to}>
-                <ListItemText primary={route.label} />
+                <ListItemText primary={route.label}  />
               </Link>
             </ListItemButton>
           </ListItem>

@@ -6,7 +6,7 @@ import style from './Footer.module.scss';
 export default function Footer() {
   return (
     <div className={style.social__wrap}>
-      <div className={style.footer}>
+      {/* <div className={style.footer}>
         <div>Lucas Shtorache</div>
         <div className={style.social__link}>
           <a
@@ -29,7 +29,8 @@ export default function Footer() {
           </a>
         </div>
         <div>Santos, São Paulo</div>
-      </div>
+      </div> */}
+      <a href="https://www.instagram.com/lucasshtorache/">@lucasshtorache</a>
     </div>
   );
 }

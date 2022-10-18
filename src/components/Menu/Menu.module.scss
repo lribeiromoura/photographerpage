@@ -11,19 +11,29 @@
   }
 }
 @mixin for-phone-only {
-  @media (max-width: 599px) { @content; }
+  @media (max-width: 599px) {
+    @content;
+  }
 }
 @mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
+  @media (min-width: 600px) {
+    @content;
+  }
 }
 @mixin for-tablet-landscape-up {
-  @media (min-width: 900px) { @content; }
+  @media (min-width: 900px) {
+    @content;
+  }
 }
 @mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
+  @media (min-width: 1800px) {
+    @content;
+  }
 }
 
 .sidebar {
@@ -59,8 +69,8 @@ a {
 .sidebar nav {
   display: flex;
   justify-content: flex-end;
-    align-items: center;
-    width: 100%;
+  align-items: center;
+  width: 100%;
 }
 
 .sidebar nav ul {
@@ -86,7 +96,11 @@ li:not(:last-child):after {
   }
 }
 
-@media (min-width: 700px) { 
+.MuiList-root > .MuiListItemButton-root.MuiListItemButton-gutters > a {
+  width: inherit;
+}
+
+@media (min-width: 700px) {
   .menu__desktop {
   }
 }
