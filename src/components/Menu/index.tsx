@@ -20,6 +20,10 @@ export default function Menu() {
       label: 'SHOWS',
       to: '/shows',
     },
+    {
+      label: 'VIDEOS',
+      to: '/videos',
+    },
   ];
 
   const [state, setState] = useState({
