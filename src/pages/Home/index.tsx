@@ -28,9 +28,9 @@ export default function index() {
           </div>
         </div>
       </section>
-      <div className={style.footer__section}>
+      <section className={style.footer__section}>
         <Footer />
-      </div>
+      </section>
     </>
   );
 }

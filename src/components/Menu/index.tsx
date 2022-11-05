@@ -83,15 +83,6 @@ export default function Menu() {
 
   return (
     <>
-      {/* <div className={style.exemplos}>Menu</div>
-      <div
-        className={classNames({
-          [style.exemplos__exemplo]: true,
-          [style['exemplos--ativo']]: true,
-        })}
-      >
-        Menu
-      </div> */}
       <header className={style.sidebar}>
         <div
           className={classNames({
